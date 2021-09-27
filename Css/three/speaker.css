@@ -1,6 +1,8 @@
 .pageContent {
     display: flex;
-    margin: auto;
+    position: absolute;
+    float: inline-end;
+   top: 5%;
     max-width: 90%;
     justify-content: center;
     margin-top: 4%;
