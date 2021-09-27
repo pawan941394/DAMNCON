@@ -4,6 +4,7 @@ body {
     margin: 0;
     background: rgb(10, 25, 47);
     overflow: hidden;
+    display: flex;
     justify-content: center;
     align-items: center;
 }
