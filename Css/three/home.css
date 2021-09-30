@@ -1,199 +1,153 @@
-/*====================================================
-                        HOME  |               
-                        h3->b-color:-#41464b
-======================================================*/
-/* =============troubleshoot css=================*/
-* {
-    background: #000 !important;
-    color: #0f0 !important;
+/* =============troubleshoot css=================
+   *{ background: transparent !important;
+    color: red !important;
     outline: solid #f00 1px !important;
   }
-  
-#home {
+ 
+ */
+/*=========================
+        Grid layout wireframe
+        =====================*/
+
+        .item1 { grid-area: header; background: transparent !important; color: black; }
+        .item2 { grid-area: left-; color: black;}
+        .item3 { grid-area: right-; color: black;}
+        .item4 { grid-area: main; background: transparent !important; }
+        .item5 { grid-area: sponsor1; background: black !important; color: blanchedalmond;}
+        .item6 { grid-area:sponsor2;background: black !important; color: blanchedalmond;}
+        .item7 { grid-area:event1;background: black !important; color: blanchedalmond;}
+        .item8 { grid-area:event2;background: black !important; color: blanchedalmond;}
+        .item9 { grid-area:footer;background: black !important; color: blanchedalmond;}
+        
+        
+        .grid-container {
+          display: grid;
+          
+          grid-template-areas:
+            'header header header header header header'
+            'main main main main main main'
+            'main main main main main main'
+            'main main main main main main'
+            'main main main main main main'        
+            'left- sponsor1 sponsor1 sponsor2 sponsor2 right-'
+            'left- event1 event1 event2 event2 right-'
+            'footer footer footer footer footer footer';
+          grid-gap: 10px black; 
+          margin-top: 10%;
+                 
+         }
+
+         
+        
+        
+        .grid-container > div {
+          
+        width: 100%;
+          text-align: left;
+          background: black; 
+          
+          font-size: 24px;
+         
+         
+          
+        }
+              
+        
+        /*====================================================
+                                HOME  |               
+                                h3->b-color:-#41464b
+        ======================================================*/
    
-    width: 100%;
-    top: 0%;
-    position: absolute;
-    
-}
+        #home{
+            width: 100%;
+            height: 100%;
+         
+          
+        }
+        
+        #home-content-box-inner {
+            display: contents;
+            vertical-align: middle;
+            color: white;
+            font-size: 14px;
+            text-align: center; 
+            
+        }
 
-#home-cover {
-    
-    background-color: transparent;
-    color:red
-}
-
-#home-content-box {
-    width: 100%;
-    
-    display: table;
-}
-
-#home-content-box-inner {
-    
-    vertical-align: middle;
-    color: white;
-    width: 100%;
-    font-size: 13px;
-    /*text-align: center; */
-}
-
-#home-heading h3 {
-    color: #a9b7c5;
-    font-size: 110px;
-    font-weight: 600;
-    margin: 10px 0 10px 0;
-    line-height: 4.6rem;
-    font-style: italic;
-    font-family: 'Courier New', Courier, monospace;
-}
-
-#home-heading h3 b {
-    color: #41464b;
-    font-family: 'Times New Roman', Times, serif;
-    font-style: normal;
-    line-height: 3.0rem
-    width:100%
-    heigt:auto;
-}
-#home-btn{
-    width: 100%;
-    padding: auto;
-    color:yellow;
-}
-
-/*=====================================================
-					Button
-======================================================*/
-
-.btn-white,
-.btn-white,
-a[title="View Our Work"] {
-    background-color: transparent;
-    border-color: rgb(102, 5, 5);
-
-}
-
-.btn-white:hover,
-.btn-white:focus {
-    background-color: white;
-    color: #41464b;
-    border-color: green;
-}
-
-
-
-
-/*====================================================
-                       ANIMATE
-======================================================*/
-
-#home-cover,
-#home-heading,
-#home-btn {
-    -webkit-animation-duration: .5s;
-    animation-duration: .5s;
-}
-
-#home-cover {
-    -webkit-animation-delay: .1s;
-    animation-delay: .1s;
-}
-
-#home-heading {
-    -webkit-animation-delay: .5s;
-    animation-delay: .5s;
-}
-
-#home-btn {
-    -webkit-animation-delay: 1s;
-    animation-delay: 1s;
-}
-
-/* =========================================
-                    Sponsor
-============================================*/
-#grid {
-    background-color: black;
-    position: absolute;
-    top: 100%;
-    padding-right: 5%;
-    padding-left: 7%;
-    width: 100%;
-    text-emphasis-color: white;
-}
-
-#Sponsor {
-    display: grid;
-    grid-area: 50%;
-    width: 100%;
-
-    position: relative;
-    /*grid-template-columns: 1fr 1fr; 
-    grid-template-rows: 1fr 1fr;*/
-    background-color: black;
-    
-
-}
-
-#Sponsor>div {
-
-    padding: 5px;
-    margin: 2%;
-    font-size: 4vw;
-    color: pink;
-    text-align: left;
-}
-
-.Sponsor-left {
-    
-    background: indigo;
-    grid-column: auto;
-    grid-row: auto;
-    
-
-}
-
-.Event-left {
-    background: steelblue;
-    grid-column: auto;
-    grid-row: auto;
-}
-
-.Event-right {
-
-    background: green;
-    grid-column: 2 / 3;
-    grid-row: 1 / 2;
-}
-
-.Sponsor-right {
-    background: orangered;
-    grid-column: auto;
-    grid-row: auto;
-}
-
-.fa-ul{
-    font-size: medium;
-}
-/*==================================================
-                Footer
-   ===================================================*/
-#footer {
-    top: 169%;
-    width: 100%;
-    position: absolute;
-    background-color: black;
-    box-sizing: border-box;
-
-}
-
-.bottom {
+      
+        
+        #home-heading h3 {
+            color: #a9b7c5;
+            font-size: 110px;
+            font-weight: 600;
+            margin: 10px 0 10px 0;
+            line-height: 4.6rem;
+            font-style: italic;
+            font-family: 'Courier New', Courier, monospace;
+        }
+        
+        #home-heading h3 b {
+            color: #41464b;
+            font-family: 'Times New Roman', Times, serif;
+            font-style: normal;
+            line-height: 3.0rem
+            
+        }
+       
+        
+        /*=====================================================
+                            Button
+        ======================================================*/
+        
+        .btn-white,
+        .btn-white,
+        a[title="View Our Work"] {
+            background-color: transparent;
+            border-color: blueviolet;
+            font-size: 20px;
+        
+        }
+        
+        .btn-white:hover,
+        .btn-white:focus {
+            background-color: green;
+            color: black;
+            border-color: red;
+        
+        }
+        
+        
+        
+        
+        /*====================================================
+                               ANIMATE
+        ======================================================*/
+        
+        #home-cover,
+        #home-heading,
+        #home-btn {
+            -webkit-animation-duration: .5s;
+            animation-duration: .5s;
+        }
+        
+        #home-cover {
+            -webkit-animation-delay: .1s;
+            animation-delay: .1s;
+        }
+        
+        #home-heading {
+            -webkit-animation-delay: .5s;
+            animation-delay: .5s;
+        }
+        
+        #home-btn {
+            -webkit-animation-delay: 1s;
+            animation-delay: 1s;
+        }
 
 
-    left: 0;
-    bottom: 0;
-    width: 100%;
-    color: white;
-    text-align: center;
-}
+        /*=============Regular Expressions===========*/
+
+      
+        
+           
