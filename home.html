@@ -9,14 +9,17 @@
         <!-- animate CSS -->
         <link rel="stylesheet" href="./Css/three/animate.css">
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-      
+      <style>
+
+        
+      </style>
       </head>
      
     
       <div class="grid-container" >
-        <div class="item1">header grid</div>
-        <div class="item2">left grid</div>
-        <div class="item3">right grid</div>  
+        <div class="item1"><br></div>
+        <div class="item2">left</div>
+        <div class="item3">right</div>  
         <div class="item4">          
            <!-- Home -->    
         <section id="home" >    
@@ -24,7 +27,7 @@
             <div id="home-content-box">    
               <div id="home-content-box-inner" class="text-center">    
                 <div id="home-heading" class="animated zoomIn">
-                  <h3>TEAM DSPH<br >FEEL <br> THE VIRTUAL  <br > WORLD </b>
+                  <h3><br> DSPH<br >FEEL <br> THE VIRTUAL  <br > WORLD </b>
                 </div>
                 <p> BECOME A SPONSOR/COMMUNITY PARTNER</p>
                 <div id="home-btn" class="animated zoomIn">
@@ -38,7 +41,7 @@
         </section>     
         </div>
         
-                <div class="item5">           
+                <div class="item5">  <br>         
                   <h5>Damcon</h5>
                   <ul class="fa-ul">
                     <li>  <a class="2fa" style="border: 1px;">  <i style="font-size:20px" class="fa">&#xf091;  </i>  </a> Amazing Gift </li>
@@ -52,7 +55,7 @@
                 </div>
                 
       
-                <div class="item6"><h3> OUR SPONSORS  </h3>        
+                <div class="item6"><br><h3> OUR SPONSORS  </h3>        
                     
                 </div>
       
@@ -87,7 +90,15 @@
         </a> 
         
       </div>
-      
+      <script>
+        let elements = document.querySelectorAll('.item6');
+    elements.forEach(element => {
+        element.style.color = "green";
+        element.style.background = "red";
+        //accessing the single properties of style one by one is the preferred way 
+        //than changing the whole `style` string 
+    });
+      </script>
      
       
      

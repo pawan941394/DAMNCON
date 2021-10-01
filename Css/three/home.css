@@ -3,8 +3,8 @@
     color: red !important;
     outline: solid #f00 1px !important;
   }
+ =================================================*/
  
- */
 /*=========================
         Grid layout wireframe
         =====================*/
@@ -14,7 +14,7 @@
         .item3 { grid-area: right-; color: black;}
         .item4 { grid-area: main; background: transparent !important; }
         .item5 { grid-area: sponsor1; background: black !important; color: blanchedalmond;}
-        .item6 { grid-area:sponsor2;background: black !important; color: blanchedalmond;}
+        .item6 { grid-area:sponsor2;background: black; color: blanchedalmond;}
         .item7 { grid-area:event1;background: black !important; color: blanchedalmond;}
         .item8 { grid-area:event2;background: black !important; color: blanchedalmond;}
         .item9 { grid-area:footer;background: black !important; color: blanchedalmond;}
@@ -32,8 +32,8 @@
             'left- sponsor1 sponsor1 sponsor2 sponsor2 right-'
             'left- event1 event1 event2 event2 right-'
             'footer footer footer footer footer footer';
-          grid-gap: 10px black; 
-          margin-top: 10%;
+            grid-gap: 10px black;
+            
                  
          }
 
@@ -59,8 +59,8 @@
         ======================================================*/
    
         #home{
-            width: 100%;
-            height: 100%;
+            width: 100%;      
+            
          
           
         }
@@ -70,8 +70,7 @@
             vertical-align: middle;
             color: white;
             font-size: 14px;
-            text-align: center; 
-            
+            text-align: center;             
         }
 
       
@@ -80,7 +79,7 @@
             color: #a9b7c5;
             font-size: 110px;
             font-weight: 600;
-            margin: 10px 0 10px 0;
+            margin-top: 0px;
             line-height: 4.6rem;
             font-style: italic;
             font-family: 'Courier New', Courier, monospace;
@@ -93,26 +92,33 @@
             line-height: 3.0rem
             
         }
+        #home-btn {
+            
+            background: black;
+            color: green;
+        }
+           
        
         
         /*=====================================================
                             Button
         ======================================================*/
         
-        .btn-white,
+        
         .btn-white,
         a[title="View Our Work"] {
             background-color: transparent;
-            border-color: blueviolet;
-            font-size: 20px;
+            border-color: red;
+            font-size: 18px;
+            
         
         }
         
         .btn-white:hover,
         .btn-white:focus {
-            background-color: green;
-            color: black;
-            border-color: red;
+            background-color:green;
+            color: white;
+            border-color: gray;
         
         }
         
@@ -126,6 +132,7 @@
         #home-cover,
         #home-heading,
         #home-btn {
+            
             -webkit-animation-duration: .5s;
             animation-duration: .5s;
         }
