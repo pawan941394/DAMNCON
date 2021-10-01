@@ -6,7 +6,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Internship</title>
-     <link rel="stylesheet" href="./Css/three/background.css" /> 
+    <link rel="stylesheet" href="./Css/three/background.css" />
     <link rel="stylesheet" href="./Css/three/homelinks.css" />
     <link rel="stylesheet" href="./Css/three/humburger.css">
     <link rel="stylesheet" href="./Css/three/navbar.css">
@@ -22,7 +22,7 @@
             <div class="container-fluid">
                 <a class="navbar-brand text-white" href="#">DAMNCON</a>
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon">  <div class="container" onclick="myFunction(this)">
+            <span class="navbar-toggler-icon" id="humburgeridforspace">  <div class="container" onclick="myFunction(this)">
               <div class="bar1"></div>
               <div class="bar2"></div>
               <div class="bar3"></div>
@@ -32,10 +32,10 @@
                 <div class="collapse navbar-collapse" id="navbarSupportedContent">
                     <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
                         <li class="nav-item">
-                            <a class="nav-link active" aria-current="page" href="index.html">Home</a>
+                            <a class="nav-link active" aria-current="page" href="#">Home</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="about_us.html">About</a>
+                            <a class="nav-link" href="#">About</a>
                         </li>
                         <li class="nav-item">
                             <a class="nav-link" href="#">Speaker</a>
@@ -130,7 +130,7 @@
         >
       </div>
     </div>  
-    <section class="pageContent">
+    <section class="pageContent" id="speakerpagecontent">
 
       <div class="firstSpeakerHeadng">
           <h2>Our Speakers</h2>
@@ -191,13 +191,20 @@
   </section>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
 
-  <script src="./Js/three.min.js"></script>
-    <script src="./Js/back.js"></script> 
+    <script src="./Js/three.min.js"></script>
+    <script src="./Js/back.js"></script>
     <script src="./Js/humburger.js"></script>
 <script>const card = document.querySelector(".card__inner");
 
   card.addEventListener("click", function (e) {
     card.classList.toggle('is-flipped');
-  });</script>
+  });
+
+let space  = document.getElementById("humburgeridforspace");
+let speaker=document.getElementById("speakerpagecontent");
+space.addEventListener("click",function(){
+speaker.style.marginTop="12%";
+})
+</script>
   </body>
 </html>
