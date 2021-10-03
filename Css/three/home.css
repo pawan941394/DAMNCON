@@ -1,0 +1,169 @@
+/* =============troubleshoot css=================
+   *{ background: transparent !important;
+    color: red !important;
+    outline: solid #f00 1px !important;
+  }
+ =================================================*/
+ 
+/*=========================
+        Grid layout wireframe
+        =====================*/
+        *{
+            padding: 0%;
+            margin: 0%;
+        }
+
+        .item1 { grid-area: header;  }
+        .item2 { grid-area: left-; }
+        .item3 { grid-area: right-; }
+        .item4 { grid-area: main;  }
+        .item5 { grid-area: sponsor1;     }
+        .item6 { grid-area:sponsor2;  }
+        .item7 { grid-area:event1;}
+             
+        .item8 {  grid-area:event2;}
+        .item9 { grid-area:footer;}
+        
+        
+        .grid-container {
+          display: grid;
+          
+          grid-template-areas:
+            'header header header header header header'
+            'main main main main main main'
+            'main main main main main main'
+            'main main main main main main'
+            'main main main main main main'        
+            'left- sponsor1 sponsor1 sponsor2 sponsor2 right-'
+            'left- event1 event1 event2 event2 right-'
+            'footer footer footer footer footer footer';
+            grid-gap: auto transparent;
+            padding: auto;
+            margin: auto;
+            height: 100vh;
+            
+                 
+         }
+
+         
+        
+        
+        .grid-container > div {
+          
+        background-color: transparent;
+        color: yellow;
+       
+          
+         
+          
+        }
+              
+        
+        /*====================================================
+                                HOME  |               
+                                h3->b-color:-#41464b
+        ======================================================*/
+        #home{
+                 
+            width: 100vw;
+            
+          
+        }
+        
+        #home-content-box-inner {
+            display: contents;
+            vertical-align: middle;
+            color: white;
+            font-size: 21px;
+            text-align: center;             
+        }
+
+      
+        
+        #home-heading h3 {
+            color: #a9b7c5;
+            font-size: 110px;
+            font-weight: 600;
+            margin-top: 0px;
+            line-height: 4.6rem;
+            font-style: italic;
+            font-family: 'Courier New', Courier, monospace;
+        }
+        
+        #home-heading h3 b {
+            color: #41464b;
+            font-family: 'Times New Roman', Times, serif;
+            font-style: normal;
+            line-height: 3.0rem
+            
+        }
+        #home-btn {
+            
+            background: transparent;
+            color: green;
+        }
+           
+       
+        
+        /*=====================================================
+                            Button
+        ======================================================*/
+        
+        
+        .btn-white,
+        a[title="View Our Work"] {
+            background-color: transparent;
+            border-color: goldenrod;
+            font-size: 18px;
+            
+        
+        }
+        
+        .btn-white:hover,
+        .btn-white:focus {
+            background-color:transparent;
+            color: white;
+            border-color: green;
+        
+        }
+    
+        
+        
+        
+        /*====================================================
+                               ANIMATE
+        ======================================================*/
+        
+        #home-cover,
+        #home-heading,
+        #home-btn {
+            
+            -webkit-animation-duration: .5s;
+            animation-duration: .5s;
+        }
+        
+        #home-cover {
+            -webkit-animation-delay: .1s;
+            animation-delay: .1s;
+        }
+        
+        #home-heading {
+            -webkit-animation-delay: .5s;
+            animation-delay: .5s;
+        }
+        
+        #home-btn {
+            -webkit-animation-delay: 1s;
+            animation-delay: 1s;
+        }
+
+
+    /*=============Regular Expressions===========*/
+    
+   
+        
+    
+
+      
+        
+           
