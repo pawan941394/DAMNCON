@@ -94,7 +94,8 @@
             color: #41464b;
             font-family: 'Times New Roman', Times, serif;
             font-style: normal;
-            line-height: 3.0rem
+            line-height: 0.9rem;
+            font-weight:800;
             
         }
         #home-btn {
