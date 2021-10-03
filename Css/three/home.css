@@ -8,12 +8,8 @@
 /*=========================
         Grid layout wireframe
         =====================*/
-        *{
-            padding: 0%;
-            margin: 0%;
-        }
-
-        .item1 { grid-area: header;  }
+        
+        .item1 { grid-area: header; padding-top: 1px; margin-top: 1px; margin-bottom: 10px; }
         .item2 { grid-area: left-; }
         .item3 { grid-area: right-; }
         .item4 { grid-area: main;  }
@@ -26,7 +22,7 @@
         
         
         .grid-container {
-          display: grid;
+          display: grid ;
           
           grid-template-areas:
             'header header header header header header'
@@ -38,9 +34,10 @@
             'left- event1 event1 event2 event2 right-'
             'footer footer footer footer footer footer';
             grid-gap: auto transparent;
-            padding: auto;
+            padding: 10px;
             margin: auto;
             height: 100vh;
+            width: 100vw;
             
                  
          }
@@ -87,7 +84,7 @@
             margin-top: 0px;
             line-height: 4.6rem;
             font-style: italic;
-            font-family: 'Courier New', Courier, monospace;
+            font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
         }
         
         #home-heading h3 b {
@@ -95,7 +92,7 @@
             font-family: 'Times New Roman', Times, serif;
             font-style: normal;
             line-height: 0.9rem;
-            font-weight:800;
+            font-weight:700;
             
         }
         #home-btn {
